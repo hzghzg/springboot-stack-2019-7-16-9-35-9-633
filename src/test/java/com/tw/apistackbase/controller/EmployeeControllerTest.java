@@ -26,7 +26,7 @@ public class EmployeeControllerTest {
         mockMvc.perform(get("/employees"))
                 .andDo(print())
                 .andExpect(status().isOk())
-                .andExpect(content().contentType("application/json"))
+                .andExpect(content().contentType("application/json;charset=UTF-8"))
                 .andExpect(content().json("[\n" +
                         "    {\n" +
                         "        \"id\": 4,\n" +
